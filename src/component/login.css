@@ -1,0 +1,43 @@
+.radio{
+   
+    /* background-color: red; */
+    padding: 5px;
+     cursor: pointer;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] ~ label{
+    color: grey;
+    opacity: .7;
+    position: relative;
+    padding: 7px 7px 7px 2px;
+    transition: .2s all ease-in-out;
+
+    /* background-color: red; */
+}
+input[type="radio"] ~ label::after{
+    content: "";
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: grey;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .stud, .admin{
+    
+} */
+input[type="radio"]:checked ~ label{
+    color: black;
+    opacity: 1;
+}
+input[type="radio"]:checked ~ label::after{
+    background-color: black;
+
+}
+.eye-icon {
+    font-size: 1rem;
+}
